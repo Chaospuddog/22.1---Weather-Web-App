@@ -47,6 +47,11 @@ header {
   font-size: 1rem;
   font-weight: 600;
 }
+.citySearch {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+}
 
 .city {
   font-size: 1.66rem;
@@ -82,4 +87,7 @@ header {
 }
 .weatherIcon {
   height: 4rem;
+}
+.wide {
+  height: 100rem;
 }
