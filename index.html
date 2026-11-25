@@ -7,14 +7,40 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <ul>
-        <li>
-          <a href="#"><img src="./media/logoBright.svg" alt="Weather app" /></a>
-        </li>
-        <li><button type="button">Wybrane Miasto</button></li>
-      </ul>
-    </nav>
+    <header>
+      <a href="#">
+        <img src="./media/logoBright.svg" alt="Weather app" class="logo" />
+      </a>
+      <div class="cityButtonWrap">
+        <img src="./media/maps-arrow-diagonal.svg" alt="" />
+        <button type="button" class="cityButton">Wybrane Miasto</button>
+        <img src="./media/nav-arrow-down.svg" alt="" />
+      </div>
+    </header>
+    <main>
+      <div class="currentCity margin">
+        <h1 class="city">Wybrane Pogoda</h1>
+        <p class="currentCityDescription">Wybrane, województwo wybrane</p>
+      </div>
+      <div class="currentWeather">
+        <div class="currentTop">
+          <div class="currentLeft">
+            <p class="mainTemp">-99&deg;</p>
+            <span class="znak">C</span>
+          </div>
+          <div class="currentRight">
+            <img src="./media/sun.svg" class="weatherIcon" />
+            <p class="iconDescription">Słonecznie</p>
+          </div>
+        </div>
+        <div class="currentBottom">
+          <span class="feelsTemp">Odczuwalna: -99&deg;C</span>
+          <span class="highTemp">H: -99&deg;C</span>
+          <span class="lowTemp">L: -99&deg;C</span>
+          <p class="rainProbability">Prawdopodobieństwo opadów: 999%</p>
+        </div>
+      </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
