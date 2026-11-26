@@ -1,7 +1,11 @@
 const currentCityBtn = document.querySelector(".cityButton");
-const citySearch = document.querySelector(".citySearch");
+const citySearch = document.querySelector(".citySearchWrap");
+const searchBackBtn = document.querySelector(".searchBackButton");
 
 currentCityBtn.addEventListener("click", () => {
   citySearch.toggleAttribute("hidden");
-  console.log(citySearch);
+});
+
+searchBackBtn.addEventListener("click", () => {
+  citySearch.toggleAttribute("hidden");
 });

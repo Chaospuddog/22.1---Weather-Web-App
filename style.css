@@ -23,6 +23,9 @@ header {
   height: 4rem;
 }
 .cityButtonWrap {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
   display: flex;
   align-items: center;
   background: #222;
@@ -47,10 +50,100 @@ header {
   font-size: 1rem;
   font-weight: 600;
 }
-.citySearch {
-  position: relative;
+.citySearchWrap {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-flow: column nowrap;
+}
+.citySearchTop {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 1rem;
+}
+.citySearchTop button {
+  background: none;
+  border: none;
+  flex-basis: 10%;
+}
+.backArrow {
+  width: 2rem;
+  flex-basis: 20%;
+  margin-right: 0.5rem;
+}
+.searchBox {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 2.5rem;
+  flex-basis: 90%;
+  border: 1px solid black;
+  border-radius: 2rem;
+}
+.searchBox img {
+  height: 1.5rem;
+  margin: 0.25rem;
+  flex-basis: 10%;
+}
+.searchBox input {
+  background: 0;
+  border: 0;
+  font-size: 1rem;
+  flex-basis: 80%;
+  height: 70%;
+}
+.favoriteSearch {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+}
+.favoriteSearch p {
+  margin: 0.5rem 0 0.5rem 0;
+  font-weight: 500;
+}
+.searchResults p {
+  margin: 0.5rem 0 0.5rem 0;
+  font-weight: 500;
+}
+.cityWrap {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 2.5rem;
+  align-items: center;
+}
+.cityWrap img {
+  height: 1.75rem;
+  flex-basis: 10%;
+}
+.searchResults .cityWrap img {
+  height: 1.75rem;
+  flex-basis: 20%;
+}
+.searchResults .cityWrap .pin {
+  height: 1rem;
+  flex-basis: 10%;
+}
+.cityWrap .pin {
+  height: 1rem;
+  flex-basis: 10%;
+}
+.cityWrap span {
+  display: block;
+  text-align: left;
+}
+.cityWrap button {
+  flex-basis: 70%;
+  background: none;
+  border: none;
+}
+.cityName {
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .city {

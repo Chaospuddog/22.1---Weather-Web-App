@@ -17,11 +17,6 @@
         <img src="./media/nav-arrow-down.svg" alt="" />
       </div>
     </header>
-    <div class="citySearch">
-      <input placeholder="pozdrawiam" />
-      <button>Ja też</button>
-      <button>Ja też2</button>
-    </div>
     <main>
       <div class="currentCity margin">
         <h1 class="city">Wybrane Pogoda</h1>
@@ -45,6 +40,62 @@
           <p class="rainProbability">Prawdopodobieństwo opadów: 999%</p>
         </div>
       </div>
+      <section class="citySearchWrap">
+        <div class="citySearchTop">
+          <button class="searchBackButton">
+            <img
+              class="backArrow"
+              src="./media/nav-arrow-left.svg"
+              alt="powrót"
+            />
+          </button>
+          <div class="searchBox">
+            <img src="./media/search.svg" />
+            <input type="text" placeholder="Wyszukaj lokalizacje" />
+            <img src="./media/xmark-circle-solid.svg" />
+          </div>
+        </div>
+        <div class="favoriteSearch margin">
+          <p>Twoje miejsca:</p>
+          <div class="cityWrap">
+            <img src="./media/map-pin.svg" class="pin" />
+            <button>
+              <span class="cityName">Łódź</span>
+              <span class="cityVoid">województwo Łódzkie, Polska</span>
+            </button>
+            <img src="./media/star.svg" />
+            <img src="./media/xmark.svg" />
+          </div>
+          <div class="cityWrap">
+            <img src="./media/map-pin.svg" class="pin" />
+            <button>
+              <span class="cityName">Nowy Targ</span>
+              <span class="cityVoid">województwo małopolskie, Polska</span>
+            </button>
+            <img src="./media/star.svg" />
+            <img src="./media/xmark.svg" />
+          </div>
+        </div>
+        <div class="searchResults margin">
+          <p>Wyszukane miasta:</p>
+          <div class="cityWrap">
+            <img src="./media/map-pin.svg" class="pin" />
+            <button>
+              <span class="cityName">Nowy Targ</span>
+              <span class="cityVoid">województwo małopolskie, Polska</span>
+            </button>
+            <img src="./media/star.svg" />
+          </div>
+          <div class="cityWrap">
+            <img src="./media/map-pin.svg" class="pin" />
+            <button>
+              <span class="cityName">Nowy Targ</span>
+              <span class="cityVoid">województwo małopolskie, Polska</span>
+            </button>
+            <img src="./media/star.svg" />
+          </div>
+        </div>
+      </section>
       <div class="wide"></div>
     </main>
     <script src="script.js"></script>
