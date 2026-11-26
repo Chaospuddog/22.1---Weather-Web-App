@@ -9,7 +9,7 @@
   <body>
     <header>
       <a href="#">
-        <img src="./media/logoBright.svg" alt="Weather app" class="logo" />
+        <img src="./media/wolf-solid.svg" alt="Weather app" class="logo" />
       </a>
       <div class="cityButtonWrap">
         <img src="./media/maps-arrow-diagonal.svg" alt="" />
@@ -34,10 +34,17 @@
           </div>
         </div>
         <div class="currentBottom">
-          <span class="feelsTemp">Odczuwalna: -99&deg;C</span>
-          <span class="highTemp">H: -99&deg;C</span>
-          <span class="lowTemp">L: -99&deg;C</span>
-          <p class="rainProbability">Prawdopodobieństwo opadów: 999%</p>
+          <div class="currentBottomLeft">
+            <span class="feelsTemp">Odczuwalna: -99&deg;C</span>
+            <span class="highTemp">H: -99&deg;C</span>
+            <span class="lowTemp">L: -99&deg;C</span>
+            <p class="rainProbability">Prawdopodobieństwo opadów: 999%</p>
+          </div>
+          <div class="currentBottomRight">
+            <button>
+              <img src="./media/refresh.svg" />
+            </button>
+          </div>
         </div>
       </div>
       <section class="citySearchWrap" hidden>
@@ -94,6 +101,29 @@
             </button>
             <img src="./media/star.svg" />
           </div>
+        </div>
+      </section>
+      <section class="weatherAxle">
+        <div class="hour">
+          <div class="hourTop">
+            <span>25:25</span>
+            <img src="./media/sun-light.svg" />
+          </div>
+          <span class="hourTemp">99&deg;</span>
+        </div>
+        <div class="hour">
+          <div class="hourTop">
+            <span>Teraz</span>
+            <img src="./media/sun-light.svg" />
+          </div>
+          <span class="hourTemp">99&deg;</span>
+        </div>
+        <div class="hour">
+          <div class="hourTop">
+            <span>25:25</span>
+            <img src="./media/sun-light.svg" />
+          </div>
+          <span class="hourTemp">99&deg;</span>
         </div>
       </section>
       <div class="wide"></div>

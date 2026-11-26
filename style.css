@@ -21,6 +21,7 @@ header {
 }
 .logo {
   height: 4rem;
+  margin-left: 0.5rem;
 }
 .cityButtonWrap {
   position: absolute;
@@ -183,4 +184,49 @@ header {
 }
 .wide {
   height: 100rem;
+}
+.currentBottom {
+  margin-top: 0.5rem;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: end;
+}
+.currentBottomLeft {
+  font-size: 0.95rem;
+}
+.currentBottomRight img {
+  height: 2rem;
+}
+.currentBottomRight button {
+  background: none;
+  border: none;
+}
+.weatherAxle {
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 15rem;
+  justify-content: center;
+  gap: 1px;
+}
+.hour {
+  width: 3.5rem;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  border: 1px solid black;
+  border-radius: 0.75rem;
+  justify-content: space-between;
+  text-align: center;
+  font-weight: 600;
+}
+.hourTop img {
+  margin-top: 1rem;
+  height: 2.5rem;
+}
+.hourTemp {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
